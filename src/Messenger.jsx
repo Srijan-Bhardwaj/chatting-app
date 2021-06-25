@@ -7,11 +7,12 @@ import db from "./Firebase";
 import firebase from "firebase";
 import useSound from "use-sound";
 import receive from "./insight-578.mp3";
-import send from './hollow-582.mp3';
+import send from './done-for-you-612.mp3';
 
 const Messenger = () => {
-  const [playReceive] = useSound(receive);
-  const [playSend] = useSound(send)
+  const [volume,SetVolume] = useState(0.3);
+  const [playReceive] = useSound(receive,{volume});
+  const [playSend] = useSound(send,{volume})
   const messageEndRef = useRef(null);
   const [user, Setuser] = useState("unknown");
   const [myMessage, SetmyMessage] = useState("");
