@@ -52,9 +52,12 @@
 
 
 .card .logo{
-    flex-basis: 10%;
+    position:relative;
+    flex-basis: 12%;
     border-bottom: 1px solid aquamarine;
     display:flex;
+    flex-direction:column;
+    align-items:center;
     justify-content: center;
     padding: 0.5em !important;
     background-color:navy;
@@ -69,8 +72,15 @@
     flex-basis: 80%;
 }
 
+.card .logo .typer{
+    position:absolute;
+    top:77%;
+    font-size:0.75em;
+    color:orange;
+}
+
 .card .type{
-    flex-basis: 10%;
+    flex-basis: 8%;
     border-top: 1px solid aquamarine;
     background-color:navy;
 }
@@ -119,8 +129,6 @@
 }
 
 .card .messages::-webkit-scrollbar{
-    /* display: none !important;
-    overflow:hidden !important; */
     width:1px;
     background-color:black !important;
 }

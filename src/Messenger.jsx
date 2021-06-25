@@ -5,44 +5,69 @@ import SendIcon from "@material-ui/icons/Send";
 import Messages from "./Messages";
 import db from "./Firebase";
 import firebase from "firebase";
-import useSound from 'use-sound';
-import music from './pristine-609.mp3';
+import useSound from "use-sound";
+import receive from "./insight-578.mp3";
+import send from './hollow-582.mp3';
 
 const Messenger = () => {
-  const [play] = useSound(music);
+  const [playReceive] = useSound(receive);
+  const [playSend] = useSound(send)
   const messageEndRef = useRef(null);
   const [user, Setuser] = useState("unknown");
   const [myMessage, SetmyMessage] = useState("");
   const [data, Setdata] = useState([]);
+  const [typer, Settyper] = useState({ username: null });
 
   useEffect(() => {
     messageEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if(data.length>0 && data[data.length-1].username!=user){
+      playReceive();
+    }
   }, [data]);
 
   useEffect(() => {
-    const cleanUp = db
-      .collection("messages")
+    db.collection("messages")
       .orderBy("timestamp", "asc")
       .onSnapshot((snapshot) => {
-        Setdata(snapshot.docs.map((doc) => doc.data()));
+        Setdata(
+          snapshot.docs.map((doc) => {
+            return doc.data();
+          })
+        );
       });
-    // console.log(cleanUp);
-    return () => cleanUp();
+    db.collection("typer")
+      .doc("typer")
+      .onSnapshot((doc) => {
+        Settyper(doc.data());
+      });
   }, []);
 
   useEffect(() => {
+    if (typer.username == null || typer.username === "") {
+      db.collection("typer").doc("typer").set({
+        username: user,
+      });
+      setTimeout(() => {
+        db.collection("typer").doc("typer").set({
+          username: null,
+        });
+      }, 1000);
+    }
+  }, [myMessage]);
+
+  useEffect(() => {
     const name = prompt("enter name");
-    Setuser(name);
-    // console.log(data);
+    Setuser(name == null || name == "" ? "unknown" : name);
   }, []);
 
   const clicked = (e) => {
     e.preventDefault();
     db.collection("messages").add({
       message: myMessage,
-      username: user === null||user==='' ? "unknown" : user,
+      username: user,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
+    playSend();
     SetmyMessage("");
   };
 
@@ -52,6 +77,13 @@ const Messenger = () => {
         <div className={Style.card}>
           <div className={Style.logo}>
             <ForumIcon className={Style.icon} />
+            <div className={Style.typer}>
+              {typer.username === null ||
+              typer.username === user ||
+              typer.username === ""
+                ? ""
+                : `${typer.username} is typing...`}
+            </div>
           </div>
           <div className={Style.messages}>
             {data.map((item) => {
