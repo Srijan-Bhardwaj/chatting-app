@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/chatting-app/static/css/main.ee0e4c6d.chunk.css",
-    "main.js": "/chatting-app/static/js/main.12c26825.chunk.js",
-    "main.js.map": "/chatting-app/static/js/main.12c26825.chunk.js.map",
+    "main.js": "/chatting-app/static/js/main.1b5d168b.chunk.js",
+    "main.js.map": "/chatting-app/static/js/main.1b5d168b.chunk.js.map",
     "runtime-main.js": "/chatting-app/static/js/runtime-main.9f445e46.js",
     "runtime-main.js.map": "/chatting-app/static/js/runtime-main.9f445e46.js.map",
     "static/js/2.fa77c5dc.chunk.js": "/chatting-app/static/js/2.fa77c5dc.chunk.js",
@@ -14,13 +14,13 @@
     "static/js/2.fa77c5dc.chunk.js.LICENSE.txt": "/chatting-app/static/js/2.fa77c5dc.chunk.js.LICENSE.txt",
     "static/js/3.604ed1ea.chunk.js.LICENSE.txt": "/chatting-app/static/js/3.604ed1ea.chunk.js.LICENSE.txt",
     "static/media/Messenger.module.css": "/chatting-app/static/media/chat-app-background.68234730.jpg",
-    "static/media/hollow-582.f193bf16.mp3": "/chatting-app/static/media/hollow-582.f193bf16.mp3",
+    "static/media/done-for-you-612.f1aedf04.mp3": "/chatting-app/static/media/done-for-you-612.f1aedf04.mp3",
     "static/media/insight-578.e7e8aabb.mp3": "/chatting-app/static/media/insight-578.e7e8aabb.mp3"
   },
   "entrypoints": [
     "static/js/runtime-main.9f445e46.js",
     "static/js/2.fa77c5dc.chunk.js",
     "static/css/main.ee0e4c6d.chunk.css",
-    "static/js/main.12c26825.chunk.js"
+    "static/js/main.1b5d168b.chunk.js"
   ]
 }
