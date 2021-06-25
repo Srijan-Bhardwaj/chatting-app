@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/chatting-app/static/css/main.74c09fd6.chunk.css",
-    "main.js": "/chatting-app/static/js/main.35d43c07.chunk.js",
-    "main.js.map": "/chatting-app/static/js/main.35d43c07.chunk.js.map",
+    "main.css": "/chatting-app/static/css/main.ee0e4c6d.chunk.css",
+    "main.js": "/chatting-app/static/js/main.12c26825.chunk.js",
+    "main.js.map": "/chatting-app/static/js/main.12c26825.chunk.js.map",
     "runtime-main.js": "/chatting-app/static/js/runtime-main.9f445e46.js",
     "runtime-main.js.map": "/chatting-app/static/js/runtime-main.9f445e46.js.map",
-    "static/js/2.f984f1be.chunk.js": "/chatting-app/static/js/2.f984f1be.chunk.js",
-    "static/js/2.f984f1be.chunk.js.map": "/chatting-app/static/js/2.f984f1be.chunk.js.map",
+    "static/js/2.fa77c5dc.chunk.js": "/chatting-app/static/js/2.fa77c5dc.chunk.js",
+    "static/js/2.fa77c5dc.chunk.js.map": "/chatting-app/static/js/2.fa77c5dc.chunk.js.map",
     "static/js/3.604ed1ea.chunk.js": "/chatting-app/static/js/3.604ed1ea.chunk.js",
     "static/js/3.604ed1ea.chunk.js.map": "/chatting-app/static/js/3.604ed1ea.chunk.js.map",
     "index.html": "/chatting-app/index.html",
-    "static/css/main.74c09fd6.chunk.css.map": "/chatting-app/static/css/main.74c09fd6.chunk.css.map",
-    "static/js/2.f984f1be.chunk.js.LICENSE.txt": "/chatting-app/static/js/2.f984f1be.chunk.js.LICENSE.txt",
+    "static/css/main.ee0e4c6d.chunk.css.map": "/chatting-app/static/css/main.ee0e4c6d.chunk.css.map",
+    "static/js/2.fa77c5dc.chunk.js.LICENSE.txt": "/chatting-app/static/js/2.fa77c5dc.chunk.js.LICENSE.txt",
     "static/js/3.604ed1ea.chunk.js.LICENSE.txt": "/chatting-app/static/js/3.604ed1ea.chunk.js.LICENSE.txt",
     "static/media/Messenger.module.css": "/chatting-app/static/media/chat-app-background.68234730.jpg",
-    "static/media/pristine-609.9287f5ce.mp3": "/chatting-app/static/media/pristine-609.9287f5ce.mp3"
+    "static/media/hollow-582.f193bf16.mp3": "/chatting-app/static/media/hollow-582.f193bf16.mp3",
+    "static/media/insight-578.e7e8aabb.mp3": "/chatting-app/static/media/insight-578.e7e8aabb.mp3"
   },
   "entrypoints": [
     "static/js/runtime-main.9f445e46.js",
-    "static/js/2.f984f1be.chunk.js",
-    "static/css/main.74c09fd6.chunk.css",
-    "static/js/main.35d43c07.chunk.js"
+    "static/js/2.fa77c5dc.chunk.js",
+    "static/css/main.ee0e4c6d.chunk.css",
+    "static/js/main.12c26825.chunk.js"
   ]
 }
