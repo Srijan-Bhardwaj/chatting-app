@@ -118,9 +118,11 @@
     border-bottom:1px solid white;
     outline:none;
     color:whitesmoke;
-    /* word-wrap: break-word; */
-    /* font-weight: normal; */
     mix-blend-mode: difference;
+}
+
+.card .type textarea::-webkit-scrollbar{
+    overflow: hidden;
 }
 
 .card .type textarea:focus{
