@@ -25,7 +25,7 @@
     /* padding:0 1em !important; */
     justify-content: center;
     /* background-color: seagreen; */
-    row-gap: 1em;
+    row-gap: 1em !important;
 }
 
 .wrapper .card form .heading{

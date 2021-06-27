@@ -108,20 +108,22 @@
     padding:5px !important;
 }
 
-.card .type input[type="text"]{
+.card .type textarea{
     position:relative;
     all:unset;
     width:90%;
-    height:50px;
+    height: 35px;
+    max-height:100px;
     background-color: transparent;
     border-bottom:1px solid white;
     outline:none;
     color:whitesmoke;
+    /* word-wrap: break-word; */
     /* font-weight: normal; */
     mix-blend-mode: difference;
 }
 
-.card .type input[type="text"]:focus{
+.card .type textarea:focus{
     outline:none;
 }
 

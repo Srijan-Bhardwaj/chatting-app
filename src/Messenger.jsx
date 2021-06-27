@@ -113,15 +113,14 @@ const Messenger = () => {
           </div>
           <div className={Style.type}>
             <form onSubmit={clicked}>
-              <input
-                type="text"
+              <textarea
                 placeholder="Type your message..."
                 onChange={(event) => {
                   SetmyMessage(event.target.value);
                 }}
                 required
                 value={myMessage}
-              ></input>
+              ></textarea>
               <button type="submit" className={Style.submit}>
                 <SendIcon />
               </button>
