@@ -20,14 +20,14 @@ const Messenger = () => {
   const [data, Setdata] = useState([]);
   const [typer, Settyper] = useState({ username: null });
   const params = useParams();
-  let count=0;
+  const [count,Setcount] = useState(1);
 
   useEffect(() => {
-    count++;
     messageEndRef.current?.scrollIntoView({ behavior: "smooth" });
-    if(data.length>0 && data[data.length-1].username!=user && count>1){
+    if(count>1 && data.length>0 && data[data.length-1].username!=user ){
       playReceive();
     }
+    Setcount(count=>count+1);
   }, [data]);
 
   useEffect(() => {

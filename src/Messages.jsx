@@ -1,4 +1,3 @@
-import { Filter } from "@material-ui/icons";
 import React from "react";
 import Style from "./Messages.module.css";
 

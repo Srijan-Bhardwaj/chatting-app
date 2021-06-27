@@ -23,41 +23,17 @@
     transform:translate(-50%,-50%);
     width:min(550px,70%);
     height:0vh;
-    /* background-color:rgba(0, 0, 128, 0.600); */
     border:1px solid rgb(185,219,220);
     box-shadow:0em 0em 1em 0.3em rgba(0, 0, 0, 0.404);
     display:flex;
     flex-direction: column;
     column-gap: 1em;
     animation: expand 1s linear forwards;
-    /* background-image:linear-gradient(135deg,navy,navy); */
 }
 
 @keyframes expand {
     100%{height:98vh}
 }
-/* .card::before{
-    content:'';
-    position:absolute;
-    top:-1px;
-    left:-1px;
-    width:30px;
-    height:1px;
-    background-color:aquamarine;
-    animation :move 10s linear infinite;
-}
-
-@keyframes move {
-    0%{width:30px;height:1px;left:0;top:-1px;}
-    24%{width:30px;height:1px;left:95%;top:-1px;}
-    25%{width:1px;height:30px;left:100%;top:5%;}
-    49%{width:1px;height:30px;left:100%;top:95%;}
-    50%{width:30px;height:1px;left:95%;top:100%;}
-    74%{width:30px;height:1px;left:0%;top:100%;}
-    75%{width:1px;height:30px;left:-1px;top:95%;}
-    99%{width:1px;height:30px;left:-1px;top:0%;}
-} */
-
 
 .card .logo{
     position:relative;
@@ -140,9 +116,7 @@
 .card .messages{
     display:flex;
     width:100%;
-    /* overflow: hidden; */
     flex-direction: column;
-    /* background-color: tomato; */
     row-gap: 1em;
     padding:0.25em !important;
     overflow-y: auto;
