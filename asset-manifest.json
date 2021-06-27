@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/chatting-app/static/css/main.797aeddd.chunk.css",
+    "main.css": "/chatting-app/static/css/main.3a8601d5.chunk.css",
     "main.js": "/chatting-app/static/js/main.db3faecc.chunk.js",
     "main.js.map": "/chatting-app/static/js/main.db3faecc.chunk.js.map",
     "runtime-main.js": "/chatting-app/static/js/runtime-main.94fbde50.js",
@@ -10,7 +10,7 @@
     "static/js/3.f13d9263.chunk.js": "/chatting-app/static/js/3.f13d9263.chunk.js",
     "static/js/3.f13d9263.chunk.js.map": "/chatting-app/static/js/3.f13d9263.chunk.js.map",
     "index.html": "/chatting-app/index.html",
-    "static/css/main.797aeddd.chunk.css.map": "/chatting-app/static/css/main.797aeddd.chunk.css.map",
+    "static/css/main.3a8601d5.chunk.css.map": "/chatting-app/static/css/main.3a8601d5.chunk.css.map",
     "static/js/2.a9a63778.chunk.js.LICENSE.txt": "/chatting-app/static/js/2.a9a63778.chunk.js.LICENSE.txt",
     "static/js/3.f13d9263.chunk.js.LICENSE.txt": "/chatting-app/static/js/3.f13d9263.chunk.js.LICENSE.txt",
     "static/media/index.css": "/chatting-app/static/media/chat-app-background.68234730.jpg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.94fbde50.js",
     "static/js/2.a9a63778.chunk.js",
-    "static/css/main.797aeddd.chunk.css",
+    "static/css/main.3a8601d5.chunk.css",
     "static/js/main.db3faecc.chunk.js"
   ]
 }
