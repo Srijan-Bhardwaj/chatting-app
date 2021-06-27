@@ -1,0 +1,59 @@
+.container{
+    width:100%;
+    min-height:100vh;
+    display:grid;
+    place-content: center;
+}
+
+.container .card{
+    width:15em;
+    aspect-ratio: 1/1.5;
+    display: grid;
+    place-content: center;
+    background-color:whitesmoke;
+    border:2px solid salmon;
+    border-radius:10px;
+}
+
+.container .card form{
+    /* width:100%;
+    height:80%; */
+    /* margin:auto 0; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding:0 1em !important; */
+    justify-content: center;
+    /* background-color: seagreen; */
+    row-gap: 1em;
+}
+
+.container .card form .heading{
+    font-size:2em;
+    margin-bottom: 0.75em !important;
+    -webkit-text-stroke-width: 0.05em;
+    -webkit-text-stroke-color: salmon;
+    color:aqua;
+    font-family:cursive;
+    letter-spacing: 0.1em;
+}
+
+.container .card input[type="text"],input[type="password"]{
+    color:navy;
+    padding:2px 5px !important;
+    border-radius: 10px;
+}
+
+.container .card input[type="text"]:focus,input[type="password"]:focus{
+    box-shadow: 0 0 3px 3px salmon !important;
+    outline: none;
+}
+
+.container .card .colorPicker{
+    margin-bottom:1em !important;
+}
+
+.container .card form .btn{
+    text-transform: unset;
+    width:5em !important;
+}

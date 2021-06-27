@@ -21,7 +21,8 @@
     word-wrap:break-word;
     padding:5px !important;
     border-radius: 5px;
-    /* color:whitesmoke; */
+    /* mix-blend-mode: difference;  */
+    /*color:whitesmoke; */
 }
 
 .wrapper .info{
@@ -30,5 +31,6 @@
 
 .details{
     font-size:0.75em;
-    color:whitesmoke;
+    color:white;
+    mix-blend-mode:difference;
 }

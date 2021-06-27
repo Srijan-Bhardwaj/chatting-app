@@ -4,11 +4,15 @@
     box-sizing: border-box !important;
 }
 
+:root{
+    --base-color:navy;
+    --base-transparent:rgba(0, 0, 128, 0.600);
+}
+
 .container{
     position: relative;
     width:100%;
     min-height:100vh;
-    background-image: url(./chat-app-background.jpg);
     /* background-color:navy; */
 }
 
@@ -18,17 +22,21 @@
     left:50%;
     transform:translate(-50%,-50%);
     width:min(550px,70%);
-    height:98vh;
-    background-color:rgba(0, 0, 128, 0.600);
-    border:1px solid aquamarine;
+    height:0vh;
+    /* background-color:rgba(0, 0, 128, 0.600); */
+    border:1px solid rgb(185,219,220);
     box-shadow:0em 0em 1em 0.3em rgba(0, 0, 0, 0.404);
     display:flex;
     flex-direction: column;
     column-gap: 1em;
+    animation: expand 1s linear forwards;
     /* background-image:linear-gradient(135deg,navy,navy); */
 }
 
-.card::before{
+@keyframes expand {
+    100%{height:98vh}
+}
+/* .card::before{
     content:'';
     position:absolute;
     top:-1px;
@@ -48,41 +56,46 @@
     74%{width:30px;height:1px;left:0%;top:100%;}
     75%{width:1px;height:30px;left:-1px;top:95%;}
     99%{width:1px;height:30px;left:-1px;top:0%;}
-}
+} */
 
 
 .card .logo{
     position:relative;
     flex-basis: 12%;
-    border-bottom: 1px solid aquamarine;
+    border-bottom: 1px solid white;
+    mix-blend-mode:difference;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content: center;
     padding: 0.5em !important;
-    background-color:navy;
+    background-color:var(--base-color);
 }
 
 .card .logo .icon{
     font-size:3.5em !important;
-    color:aqua;
+    color:white;
+    mix-blend-mode:difference;
 }
 
 .card .messages{
     flex-basis: 80%;
+    background-color:var(--base-transparent);
 }
 
 .card .logo .typer{
     position:absolute;
     top:77%;
     font-size:0.75em;
-    color:orange;
+    color:white;
+    mix-blend-mode:difference;
 }
 
 .card .type{
     flex-basis: 8%;
-    border-top: 1px solid aquamarine;
-    background-color:navy;
+    border-top: 1px solid white;
+    mix-blend-mode:difference;
+    background-color:var(--base-color);
 }
 
 .card .type form{
@@ -101,9 +114,11 @@
     width:90%;
     height:50px;
     background-color: transparent;
-    border-bottom:1px solid aqua;
+    border-bottom:1px solid white;
     outline:none;
-    color:lightgray;
+    color:whitesmoke;
+    /* font-weight: normal; */
+    mix-blend-mode: difference;
 }
 
 .card .type input[type="text"]:focus{
@@ -112,7 +127,8 @@
 
 .card .type .submit{
     cursor:pointer;
-    color:aqua;
+    color:white;
+    mix-blend-mode:difference;
     background-color: transparent;
     border:none;
 }

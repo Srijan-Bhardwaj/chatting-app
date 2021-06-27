@@ -8,26 +8,32 @@ import firebase from "firebase";
 import useSound from "use-sound";
 import receive from "./insight-578.mp3";
 import send from './done-for-you-612.mp3';
+import { useParams } from "react-router-dom";
 
 const Messenger = () => {
   const [volume,SetVolume] = useState(0.3);
   const [playReceive] = useSound(receive,{volume});
   const [playSend] = useSound(send,{volume})
   const messageEndRef = useRef(null);
-  const [user, Setuser] = useState("unknown");
+  const [user, Setuser] = useState("");
   const [myMessage, SetmyMessage] = useState("");
   const [data, Setdata] = useState([]);
   const [typer, Settyper] = useState({ username: null });
+  const params = useParams();
+  let count=0;
 
   useEffect(() => {
+    count++;
     messageEndRef.current?.scrollIntoView({ behavior: "smooth" });
-    if(data.length>0 && data[data.length-1].username!=user){
+    if(data.length>0 && data[data.length-1].username!=user && count>1){
       playReceive();
     }
   }, [data]);
 
   useEffect(() => {
-    db.collection("messages")
+    document.documentElement.style.setProperty('--base-color',`#${params.pickcolor}`);
+    document.documentElement.style.setProperty('--base-transparent',`#${params.pickcolor}99`);
+    db.collection(params.roomName)
       .orderBy("timestamp", "asc")
       .onSnapshot((snapshot) => {
         Setdata(
@@ -37,7 +43,7 @@ const Messenger = () => {
         );
       });
     db.collection("typer")
-      .doc("typer")
+      .doc(params.roomName)
       .onSnapshot((doc) => {
         Settyper(doc.data());
       });
@@ -45,11 +51,11 @@ const Messenger = () => {
 
   useEffect(() => {
     if (typer.username == null || typer.username === "") {
-      db.collection("typer").doc("typer").set({
+      db.collection("typer").doc(params.roomName).set({
         username: user,
       });
       setTimeout(() => {
-        db.collection("typer").doc("typer").set({
+        db.collection("typer").doc(params.roomName).set({
           username: null,
         });
       }, 1000);
@@ -57,13 +63,13 @@ const Messenger = () => {
   }, [myMessage]);
 
   useEffect(() => {
-    const name = prompt("enter name");
+    const name = params.userName;
     Setuser(name == null || name == "" ? "unknown" : name);
   }, []);
 
   const clicked = (e) => {
     e.preventDefault();
-    db.collection("messages").add({
+    db.collection(params.roomName).add({
       message: myMessage,
       username: user,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
