@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/chatting-app/static/css/main.cd42d415.chunk.css",
-    "main.js": "/chatting-app/static/js/main.240796be.chunk.js",
-    "main.js.map": "/chatting-app/static/js/main.240796be.chunk.js.map",
+    "main.css": "/chatting-app/static/css/main.57331108.chunk.css",
+    "main.js": "/chatting-app/static/js/main.3895bf7e.chunk.js",
+    "main.js.map": "/chatting-app/static/js/main.3895bf7e.chunk.js.map",
     "runtime-main.js": "/chatting-app/static/js/runtime-main.fc0eb94d.js",
     "runtime-main.js.map": "/chatting-app/static/js/runtime-main.fc0eb94d.js.map",
-    "static/js/2.25ecff78.chunk.js": "/chatting-app/static/js/2.25ecff78.chunk.js",
-    "static/js/2.25ecff78.chunk.js.map": "/chatting-app/static/js/2.25ecff78.chunk.js.map",
+    "static/js/2.9de51d38.chunk.js": "/chatting-app/static/js/2.9de51d38.chunk.js",
+    "static/js/2.9de51d38.chunk.js.map": "/chatting-app/static/js/2.9de51d38.chunk.js.map",
     "static/js/3.a021e361.chunk.js": "/chatting-app/static/js/3.a021e361.chunk.js",
     "static/js/3.a021e361.chunk.js.map": "/chatting-app/static/js/3.a021e361.chunk.js.map",
     "index.html": "/chatting-app/index.html",
-    "static/css/main.cd42d415.chunk.css.map": "/chatting-app/static/css/main.cd42d415.chunk.css.map",
-    "static/js/2.25ecff78.chunk.js.LICENSE.txt": "/chatting-app/static/js/2.25ecff78.chunk.js.LICENSE.txt",
+    "static/css/main.57331108.chunk.css.map": "/chatting-app/static/css/main.57331108.chunk.css.map",
+    "static/js/2.9de51d38.chunk.js.LICENSE.txt": "/chatting-app/static/js/2.9de51d38.chunk.js.LICENSE.txt",
     "static/js/3.a021e361.chunk.js.LICENSE.txt": "/chatting-app/static/js/3.a021e361.chunk.js.LICENSE.txt",
     "static/media/index.css": "/chatting-app/static/media/chat-app-background.68234730.jpg",
     "static/media/done-for-you-612.f1aedf04.mp3": "/chatting-app/static/media/done-for-you-612.f1aedf04.mp3",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fc0eb94d.js",
-    "static/js/2.25ecff78.chunk.js",
-    "static/css/main.cd42d415.chunk.css",
-    "static/js/main.240796be.chunk.js"
+    "static/js/2.9de51d38.chunk.js",
+    "static/css/main.57331108.chunk.css",
+    "static/js/main.3895bf7e.chunk.js"
   ]
 }
