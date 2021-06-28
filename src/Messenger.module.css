@@ -13,7 +13,6 @@
     position: relative;
     width:100%;
     min-height:100vh;
-    /* background-color:navy; */
 }
 
 .card{
@@ -70,11 +69,11 @@
 .card .type{
     flex-basis: 8%;
     border-top: 1px solid white;
-    mix-blend-mode:difference;
     background-color:var(--base-color);
 }
 
 .card .type form{
+    position:relative;
     width:100%;
     height:100%;
     display:flex;
@@ -84,10 +83,20 @@
     padding:5px !important;
 }
 
+.card .type form .progress{
+    position:absolute;
+    height:2px;
+    top:-3px;
+    left:0;
+    width:0;
+    background-color: white;
+    mix-blend-mode: difference;
+}
+
 .card .type textarea{
     position:relative;
     all:unset;
-    width:90%;
+    width:70%;
     height: 35px;
     max-height:100px;
     background-color: transparent;
@@ -111,6 +120,31 @@
     mix-blend-mode:difference;
     background-color: transparent;
     border:none;
+}
+
+.card .type input[type="file"]{
+    position: relative;
+    visibility: hidden;
+    width:15%;
+}
+
+.card .type input[type="file"]::before{
+    content:'upload';
+    position:absolute;
+    visibility: visible;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    font-weight: bold;
+    font-size:0.75em;
+    border-radius: 10px;
+    color:black;
+    cursor: pointer;
 }
 
 .card .messages{

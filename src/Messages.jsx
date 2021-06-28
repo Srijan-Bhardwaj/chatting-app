@@ -12,9 +12,10 @@ const Messages = (props) => {
           className={Style.wrapper}
           style={{
             alignSelf: props.sender === true ? "flex-end" : "flex-start",
-            backgroundColor: props.sender === true ? "lightseagreen" : "lightslategrey",
+            backgroundColor:
+              props.sender === true ? "lightseagreen" : "lightslategrey",
             borderTopLeftRadius: props.sender === true ? "5px" : "0",
-            borderBottomRightRadius: props.sender === true ? "0" : "5px"
+            borderBottomRightRadius: props.sender === true ? "0" : "5px",
           }}
         >
           <div
@@ -26,9 +27,17 @@ const Messages = (props) => {
           >
             {props.name}
           </div>
-          <div style={{ color: "whitesmoke"}}>
-            {props.text}
-          </div>
+          {props.url ? (
+            <div className={Style.imgWrapper} id="imgWrapper">
+              <embed src={props.url} alt="loading"/>
+              <a href={props.url} target="_blank">
+                <div className={Style.view}>view</div>{" "}
+              </a>
+            </div>
+          ) : (
+            ""
+          )}
+          <div style={{ color: "whitesmoke" }}>{props.text}</div>
         </div>
         <div
           className={Style.details}
